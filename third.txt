@@ -84,4 +84,19 @@ ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
 $ git config --global user.email "ahmedhaza14@gmail.com"
 
 ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ rm 'third.txt'
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    third.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
 
