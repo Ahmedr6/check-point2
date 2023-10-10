@@ -1,0 +1,87 @@
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git
+$ git init
+Initialized empty Git repository in D:/learn-git/.git/
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git add third.txt
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   third.txt
+
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git commit -m 'adding third.txt'
+[master (root-commit) 22ec298] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git log
+commit 22ec298a0207759cffe14b52b6bc33a04f2e6e18 (HEAD -> master)
+Author: Ahmedr6 <ahmedhaza14@gmail.com>
+Date:   Tue Oct 10 16:14:23 2023 +0300
+
+    adding third.txt
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git add fourth.txt
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fourth.txt
+
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git commit -m 'adding fourth txt'
+[master 5090bfc] adding fourth txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git rm --cached third.txt
+rm 'third.txt'
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git commit -m 'removing third.txt'
+[master d35bcff] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git log
+commit d35bcff660df254797f6814eae70e76c69e1fe45 (HEAD -> master)
+Author: Ahmedr6 <ahmedhaza14@gmail.com>
+Date:   Tue Oct 10 16:18:45 2023 +0300
+
+    removing third.txt
+
+commit 5090bfc5b1e663323f94c6a7818e5322bafaf34b
+Author: Ahmedr6 <ahmedhaza14@gmail.com>
+Date:   Tue Oct 10 16:16:41 2023 +0300
+
+    adding fourth txt
+
+commit 22ec298a0207759cffe14b52b6bc33a04f2e6e18
+Author: Ahmedr6 <ahmedhaza14@gmail.com>
+Date:   Tue Oct 10 16:14:23 2023 +0300
+
+    adding third.txt
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git config --global user.name "Ahmedr6"
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+$ git config --global user.email "ahmedhaza14@gmail.com"
+
+ahmed@DESKTOP-4A3IBJF MINGW32 /d/learn-git (master)
+
